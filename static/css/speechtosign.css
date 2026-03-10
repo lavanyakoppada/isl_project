@@ -1,0 +1,204 @@
+/* 🔥 FULL SCREEN BACKGROUND */
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  min-height:100vh;
+  padding-left: 40px;
+}
+
+/* 🔹 TOP HEADER BAR */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #1565c0;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.top-bar h2 {
+  margin: 0;
+}
+
+/* 🔥 MAIN CONTENT CONTAINER */
+.app-window{
+  width: 500px;
+  height: 620px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #90caf9, #64b5f6);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(13,71,161,0.3);
+}
+
+/* 🔹 TITLE */
+h1{
+  color:#0d47a1;
+  margin-top:10px;
+  margin-bottom:25px;
+  background: rgba(255,255,255,0.6);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+/* 🔹 DESCRIPTION TEXT */
+p{
+  color:#0d47a1;
+  margin-bottom:25px;
+  font-size:15px;
+}
+
+/* 🔹 TEXT INPUT + MICROPHONE */
+.speech-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+/* 🔹 TEXT INPUT */
+#textInput {
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #0d47a1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#textInput:focus {
+  border-color: #0d47a1;
+  box-shadow: 0 0 6px rgba(13,71,161,0.4);
+}
+
+/* 🔹 MICROPHONE BUTTON */
+#startBtn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0d47a1;
+  transition: transform 0.2s ease;
+}
+
+#startBtn:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 SPOKEN TEXT */
+#spokenText{
+  margin-top:15px;
+  font-size:16px;
+  min-height:25px;
+  color:#0d47a1;
+}
+
+/* 🔹 GENERATE BUTTON */
+#generateBtn {
+  margin-top: 15px;
+  padding: 10px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #0d47a1;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#generateBtn:hover {
+  background:#08306b;
+  transform: translateY(-2px);
+}
+
+#generateBtn:disabled{
+  background:gray;
+  cursor: not-allowed;
+}
+
+/* 🔹 CURRENT WORD */
+#currentWord{
+  font-weight:bold;
+  margin-top:15px;
+  font-size:16px;
+  color:#0d47a1;
+}
+
+/* 🔹 MAIN VIDEO */
+video{
+  width:100%;
+  max-height:250px;
+  margin-top:20px;
+  display:block;
+  border-radius:12px;
+  background: none;
+}
+
+/* ================================= */
+/* 🔥 FLOATING VIDEO COLUMNS */
+/* ================================= */
+
+.right-videos{
+  position: fixed;
+  top: 63px;
+  width: 260px;
+  height: 920px;
+  overflow: hidden;   /* No Scrollbar */
+}
+
+/* Column Positions */
+.column1{ right: 40px; }
+.column2{ right: 320px; }
+.column3{ right: 600px; }
+
+/* Vertical Animation */
+.vertical-track{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: scrollUp 20s linear infinite;
+}
+
+/* Smooth Vertical Scroll */
+@keyframes scrollUp{
+  0%{ transform: translateY(0%); }
+  100%{ transform: translateY(-50%); }
+}
+
+/* Sign Item */
+.sign-item{
+  width: 100%;
+  text-align: center;
+}
+
+/* 🔥 FIXED VIDEO SIZE FOR PERFECT ALIGNMENT */
+.sign-item video{
+  width: 100%;
+  height: 160px;     /* Same height for all videos */
+  object-fit: cover; /* Prevent stretching */
+  border-radius: 12px;
+}
+
+.sign-item p{
+  margin-top: 5px;
+  font-weight: bold;
+  color: #0d47a1;
+}

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two-Way Communication</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+
+  <header class="top-bar">
+  <h2>Your Hands, Your Voice</h2>
+</header>
+
+  <div class="frame">
+    <!-- Header -->
+    <div class="heading-box">Two-Way Communication</div>
+    <div class="button-container">
+
+      <!-- Sign to Speech -->
+      <div class="middle-text">Sign to Speech</div>
+      <a href="{% url 'signtospeech' %}" class="action-button space">
+        <img src="{% static 'images/SigntoSpeech.png' %}" alt="Sign to Speech">
+      </a>
+
+      <!-- Speech to Sign -->
+      <div class="middle-text">Speech to Sign</div>
+      <a href="{% url 'speechtosign' %}" class="action-button">
+        <img src="{% static 'images/SpeechtoSign.png' %}" alt="Speech to Sign">
+      </a>
+
+    </div>
+
+
+  </div>
+</body>
+</html>
+
+
+
