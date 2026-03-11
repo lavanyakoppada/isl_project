@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speech to Sign</title>
+  <link rel="stylesheet" href="{% static 'css/speechtosign.css' %}">
+</head>
+
+<body>
+
+<header class="top-bar">
+  <h2>Your Hands, Your Voice</h2>
+</header>
+
+<div class="app-window">
+
+  <h1>Speech to Sign</h1>
+
+  <p><b>Click the microphone or type text to generate signs</b></p>
+
+  <div class="speech-container">
+    <input type="text" id="textInput" placeholder="Type your text here..." />
+    <button id="startBtn">🎙️</button>
+  </div>
+
+  <div id="spokenText"></div>
+  <button id="generateBtn" disabled>Generate Signs</button>
+  <div id="currentWord"></div>
+
+  <video id="video" autoplay muted></video>
+
+</div>
+
+<!-- ================= FLOATING COLUMN 1 ================= -->
+<div class="right-videos column1">
+  <div class="vertical-track">
+    <div class="sign-item"><video src="/media/signs/Bye.mp4" muted autoplay loop></video><p>Bye</p></div>
+    <div class="sign-item"><video src="/media/signs/Distance.mp4" muted autoplay loop></video><p>Distance</p></div>
+    <div class="sign-item"><video src="/media/signs/Good.mp4" muted autoplay loop></video><p>Good</p></div>
+    <div class="sign-item"><video src="/media/signs/Home.mp4" muted autoplay loop></video><p>Home</p></div>
+
+    <!-- Duplicate for smooth loop -->
+    <div class="sign-item"><video src="/media/signs/Next.mp4" muted autoplay loop></video><p>Next</p></div>
+    <div class="sign-item"><video src="/media/signs/Sad.mp4" muted autoplay loop></video><p>Sad</p></div>
+    <div class="sign-item"><video src="/media/signs/Talk.mp4" muted autoplay loop></video><p>Talk</p></div>
+  </div>
+</div>
+
+<!-- ================= FLOATING COLUMN 2 ================= -->
+<div class="right-videos column2">
+  <div class="vertical-track">
+    <div class="sign-item"><video src="/media/signs/Come.mp4" muted autoplay loop></video><p>Come</p></div>
+    <div class="sign-item"><video src="/media/signs/From.mp4" muted autoplay loop></video><p>From</p></div>
+    <div class="sign-item"><video src="/media/signs/Hello.mp4" muted autoplay loop></video><p>Hello</p></div>
+    <div class="sign-item"><video src="/media/signs/Happy.mp4" muted autoplay loop></video><p>Happy</p></div>
+
+    <div class="sign-item"><video src="/media/signs/Now.mp4" muted autoplay loop></video><p>Now</p></div>
+    <div class="sign-item"><video src="/media/signs/Thank You.mp4" muted autoplay loop></video><p>Thank You</p></div>
+    <div class="sign-item"><video src="/media/signs/Why.mp4" muted autoplay loop></video><p>Why</p></div>
+  </div>
+</div>
+
+<!-- ================= FLOATING COLUMN 3 ================= -->
+<div class="right-videos column3">
+  <div class="vertical-track">
+    <div class="sign-item"><video src="/media/signs/Do.mp4" muted autoplay loop></video><p>Do</p></div>
+    <div class="sign-item"><video src="/media/signs/Go.mp4" muted autoplay loop></video><p>Go</p></div>
+    <div class="sign-item"><video src="/media/signs/Help.mp4" muted autoplay loop></video><p>Help</p></div>
+    <div class="sign-item"><video src="/media/signs/How.mp4" muted autoplay loop></video><p>How</p></div>
+
+    <div class="sign-item"><video src="/media/signs/Stay.mp4" muted autoplay loop></video><p>Stay</p></div>
+    <div class="sign-item"><video src="/media/signs/Time.mp4" muted autoplay loop></video><p>Time</p></div>
+    <div class="sign-item"><video src="/media/signs/Who.mp4" muted autoplay loop></video><p>Who</p></div>
+  </div>
+</div>
+
+<script src="{% static 'js/speechtosign.js' %}"></script>
+
+</body>
+</html>

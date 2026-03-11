@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign to Speech</title>
+        <link rel="stylesheet" href="{% static 'css/signtospeech.css' %}">
+    </head>
+    <body>
+        <header class="top-bar">
+            <h2>Your Hands, Your Voice</h2>
+        </header>
+
+        <div class="signToSpeech">
+           
+            <h1>Sign to Speech</h1>
+
+            <button id="vedio-btn" onClick="startCamera()">Capture</button>
+            <button id="vedio-stop" onClick="stopCamera()" disabled>Stop</button><br>
+            <div class="video-container">
+                <div id="video-placeholder">
+                    <img src="{% static 'images/vedio_img.png' %}" height="50"/>
+                </div>
+                <img id="video" width="300" height="200" style="display:none"/>
+            </div>
+
+            <div class="text" contenteditable="true" spellcheck="true" 
+     style="border: 1px solid #ccc; padding: 10px; border-radius: 6px; min-height: 50px; background: #fff; font-size: 1.1rem;">
+    Signs will appear here...
+</div>
+            <button id="read">Play Audio</button>
+            <!-- <img src="{% static 'images/read1.png' %}" width="40px" height="40px"/> -->
+            
+            <!-- ================= FLOATING COLUMN 1 ================= -->
+<div class="right-videos column1">
+  <div class="vertical-track">
+    <div class="sign-item"><video src="/media/signs/Bye.mp4" muted autoplay loop></video><p>Bye</p></div>
+    <div class="sign-item"><video src="/media/signs/Distance.mp4" muted autoplay loop></video><p>Distance</p></div>
+    <div class="sign-item"><video src="/media/signs/Good.mp4" muted autoplay loop></video><p>Good</p></div>
+    <div class="sign-item"><video src="/media/signs/Home.mp4" muted autoplay loop></video><p>Home</p></div>
+
+    <!-- Duplicate for smooth loop -->
+    <div class="sign-item"><video src="/media/signs/Next.mp4" muted autoplay loop></video><p>Next</p></div>
+    <div class="sign-item"><video src="/media/signs/Sad.mp4" muted autoplay loop></video><p>Sad</p></div>
+    <div class="sign-item"><video src="/media/signs/Talk.mp4" muted autoplay loop></video><p>Talk</p></div>
+  </div>
+</div>
+
+<!-- ================= FLOATING COLUMN 2 ================= -->
+<div class="right-videos column2">
+  <div class="vertical-track">
+    <div class="sign-item"><video src="/media/signs/Come.mp4" muted autoplay loop></video><p>Come</p></div>
+    <div class="sign-item"><video src="/media/signs/From.mp4" muted autoplay loop></video><p>From</p></div>
+    <div class="sign-item"><video src="/media/signs/Hello.mp4" muted autoplay loop></video><p>Hello</p></div>
+    <div class="sign-item"><video src="/media/signs/Happy.mp4" muted autoplay loop></video><p>Happy</p></div>
+
+    <div class="sign-item"><video src="/media/signs/Now.mp4" muted autoplay loop></video><p>Now</p></div>
+    <div class="sign-item"><video src="/media/signs/Thank You.mp4" muted autoplay loop></video><p>Thank You</p></div>
+    <div class="sign-item"><video src="/media/signs/Why.mp4" muted autoplay loop></video><p>Why</p></div>
+  </div>
+</div>
+
+<!-- ================= FLOATING COLUMN 3 ================= -->
+<div class="right-videos column3">
+  <div class="vertical-track">
+    <div class="sign-item"><video src="/media/signs/Do.mp4" muted autoplay loop></video><p>Do</p></div>
+    <div class="sign-item"><video src="/media/signs/Go.mp4" muted autoplay loop></video><p>Go</p></div>
+    <div class="sign-item"><video src="/media/signs/Help.mp4" muted autoplay loop></video><p>Help</p></div>
+    <div class="sign-item"><video src="/media/signs/How.mp4" muted autoplay loop></video><p>How</p></div>
+
+    <div class="sign-item"><video src="/media/signs/Stay.mp4" muted autoplay loop></video><p>Stay</p></div>
+    <div class="sign-item"><video src="/media/signs/Time.mp4" muted autoplay loop></video><p>Time</p></div>
+    <div class="sign-item"><video src="/media/signs/Who.mp4" muted autoplay loop></video><p>Who</p></div>
+  </div>
+            
+        </div>
+        <script src="{% static 'js/signtospeech.js' %}"></script>
+    </body>
+</html>
