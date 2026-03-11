@@ -1,0 +1,44 @@
+again	prec=0.9756	rec=1.0000	f1=0.9877	support=40
+agree	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+answer	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+attendance	prec=0.9756	rec=1.0000	f1=0.9877	support=40
+book	prec=0.9310	rec=0.6750	f1=0.7826	support=40
+break	prec=1.0000	rec=0.9750	f1=0.9873	support=40
+careful	prec=0.0000	rec=0.0000	f1=0.0000	support=40
+change	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+chat	prec=1.0000	rec=0.4750	f1=0.6441	support=40
+congratulations	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+email	prec=0.9756	rec=1.0000	f1=0.9877	support=40
+file	prec=1.0000	rec=0.9250	f1=0.9610	support=40
+good morning	prec=0.9750	rec=0.9750	f1=0.9750	support=40
+happy birthday	prec=0.9070	rec=0.9750	f1=0.9398	support=40
+home	prec=1.0000	rec=0.9500	f1=0.9744	support=40
+how are you	prec=0.9688	rec=0.7750	f1=0.8611	support=40
+hungry	prec=0.0000	rec=0.0000	f1=0.0000	support=40
+i need help	prec=0.9459	rec=0.8750	f1=0.9091	support=40
+join	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+keepsmile	prec=1.0000	rec=0.9500	f1=0.9744	support=40
+meet	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+mistake	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+open	prec=1.0000	rec=0.9500	f1=0.9744	support=40
+opinion	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+pass	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+please	prec=0.8511	rec=1.0000	f1=0.9195	support=40
+practice	prec=0.9744	rec=0.9500	f1=0.9620	support=40
+pressure	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+problem	prec=0.9524	rec=1.0000	f1=0.9756	support=40
+questions	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+remember	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+seat	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+shift	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+sick	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+stop	prec=1.0000	rec=0.4250	f1=0.5965	support=40
+sun	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+team	prec=0.8605	rec=0.9250	f1=0.8916	support=40
+thirsty	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+this	prec=0.9302	rec=1.0000	f1=0.9639	support=40
+together	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+understand	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+wait	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+where	prec=1.0000	rec=1.0000	f1=1.0000	support=40
+write	prec=0.2159	rec=0.9500	f1=0.3519	support=40
