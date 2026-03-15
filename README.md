@@ -45,7 +45,7 @@ Multi-Layer Perceptron (MLP)
 
 Google Web Speech API – speech to text
 
-gTTS (Google Text-to-Speech) – text to speech
+pyttsx3 – text to speech
 
 
 # 🏗 System Architecture
